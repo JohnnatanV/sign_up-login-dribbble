@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+section.art {
+  position: relative;
+  height: 100vh;
+  width: 510px;
+  background-image: url(./assets/image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+
+.art .top {
+  padding-top: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 36px;
+}
+
+.dribbble {
+  width: 25px;
+  cursor: pointer;
+}
+
+.dribbble img {
+  filter: invert(51%) sepia(15%) saturate(898%) hue-rotate(285deg)
+    brightness(90%) contrast(90%);
+}
+
+.dribbble img:hover {
+  filter: invert(41%) sepia(15%) saturate(878%) hue-rotate(285deg)
+    brightness(90%) contrast(83%);
+}
+
+.art .title {
+  margin-top: 1.8rem;
+}
+
+.art .title h1 {
+  font-size: 2em;
+  font-weight: 900;
+  padding-right: 30px;
+  color: #8f6474;
+  letter-spacing: 1px;
+  /* line-height: 100%; */
+}
+
+.art .bottom {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.foot,
+.foot a {
+  font-size: 14.5px;
+  color: #8f6474;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: 1;
+}
+
+.main-container .top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 30px 0;
+}
+
+.main-container .top a {
+  text-decoration: none;
+  color: blue;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
