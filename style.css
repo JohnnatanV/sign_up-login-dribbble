@@ -89,3 +89,13 @@ section.art {
   display: flex;
   flex-direction: column;
 }
+
+.google {
+  width: 360px;
+  height: 120px;
+  background-color: blue;
+}
+
+.google .logo {
+  font-size: 1rem;
+}
