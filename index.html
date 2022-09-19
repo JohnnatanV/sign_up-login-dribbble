@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -54,15 +54,80 @@
         </p>
       </nav>
       <div class="form-container">
-        <div class="main">
-          <h2>Sign in to Dribbble</h2>
+        <main class="main">
+          <h2>Sign up to Dribbble</h2>
           <div class="btn-connections">
-            <div class="google">
-              <img class="logo" src="./assets/google-svgrepo-com.svg" alt="" />
+            <div class="btn-google btn">
+              <span class="google">
+                <img
+                  class="logo"
+                  src="./assets/google-svgrepo-com.svg"
+                  alt="google sign in button"
+                />
+              </span>
+              <span>Accede con google</span>
+            </div>
+            <div class="btn-twitter btn">
+              <span class="twitter">
+                <img
+                  class="logo"
+                  src="./assets/twitter.svg"
+                  alt="twitter sign in button"
+                />
+              </span>
             </div>
           </div>
-        </div>
-        <form action="#"></form>
+          <div class="separator">
+            <hr />
+            <span>Or...</span>
+            <hr />
+          </div>
+        </main>
+        <form action="#">
+          <div>
+            <div>
+              <label for="name">Name</label>
+              <input class="form-input" type="text" name="Name" id="name" />
+            </div>
+            <div>
+              <label for="usernamne">Username</label>
+              <input
+                class="form-input"
+                type="text"
+                name="Username"
+                id="usernamne"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input class="form-input" type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              class="form-input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="6+ characters"
+            />
+          </div>
+          <fieldset>
+            <input type="checkbox" name="agree-terms" id="agree-terms" />
+            <label for="agree-terms"
+              >Creating an account means you’re okay with our
+              <a target="_blank" href="/terms">Terms of Service</a>,
+              <a target="_blank" href="/privacy">Privacy Policy</a>, and our
+              default
+              <a target="_blank" href="/notifications">Notification Settings</a
+              >.</label
+            >
+          </fieldset>
+          <div>
+            <input class="btn" type="submit" value="Create Account" />
+          </div>
+        </form>
       </div>
     </section>
   </body>
